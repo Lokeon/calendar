@@ -4,6 +4,13 @@
   "description": "Calendar generator for UCA students",
   "version": "0.1.0",
   "author": "Kevin López Cala <kevin.lopezcala99@gmail.com>",
+  "contributors": [
+    {
+      "name": "Rodrigo Sanabria",
+      "email": "rodrigosanabria22@gmail.com",
+      "url": "https://krosf.com"
+    }
+  ],
   "dependencies": {
     "gatsby": "^2.0.112",
     "gatsby-image": "^2.0.29",
@@ -31,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/lokeon/calendar"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lokeon/calendar/issues"
   }
 }
