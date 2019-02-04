@@ -1,3 +1,3 @@
-import Calendar from "./subject"
+import Subject from "./subject"
 
-export default Calendar
+export default Subject
