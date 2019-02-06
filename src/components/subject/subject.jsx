@@ -1,3 +1,3 @@
-import Subject from "./subject"
+import React, { Component } from "react";
 
-export default Subject
+export default class Subject extends Component {}

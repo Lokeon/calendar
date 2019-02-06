@@ -1,4 +1,3 @@
-import React, { Component } from "react";
+import Subject from "./subject";
 
-export default class Subject extends Component {
-}
+export default Subject;
