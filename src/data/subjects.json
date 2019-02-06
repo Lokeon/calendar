@@ -10,7 +10,463 @@
       "abrev": "RC",
       "group": "A1",
       "type": "theory",
-      "week": [2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+      "week": [2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "day": 1
+    },
+    {
+      "hours": {
+        "start": "10:00",
+        "end": "11:30"
+      },
+      "classroom": "C01",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "A1",
+      "type": "theory",
+      "week": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 1
+    },
+    {
+      "hours": {
+        "start": "11:30",
+        "end": "13:00"
+      },
+      "classroom": "C01",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "A1",
+      "type": "theory",
+      "week": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 1
+    },
+    {
+      "hours": {
+        "start": "13:00",
+        "end": "14:30"
+      },
+      "classroom": "C01",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "A1",
+      "type": "theory",
+      "week": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 1
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "09:30"
+      },
+      "classroom": "C03",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "B1",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "09:30",
+        "end": "10:30"
+      },
+      "classroom": "C04",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "B3",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "09:30"
+      },
+      "classroom": "C04",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "B3",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "09:30",
+        "end": "10:30"
+      },
+      "classroom": "C04",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "B1",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "11:30"
+      },
+      "classroom": "C04",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "B3",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "11:30",
+        "end": "12:30"
+      },
+      "classroom": "C03",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "B1",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "11:30"
+      },
+      "classroom": "C03",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "B1",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "11:30",
+        "end": "12:30"
+      },
+      "classroom": "C04",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "B3",
+      "type": "problems",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "C08",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "C7",
+      "type": "practise",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "D08",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "C7",
+      "type": "practise",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "16:00",
+        "end": "18:00"
+      },
+      "classroom": "D09",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "C1",
+      "type": "practise",
+      "week": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "day": 2
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:30"
+      },
+      "classroom": "D08",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "C5",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "12:30"
+      },
+      "classroom": "D08",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "C1",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "D08",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "C3",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:30"
+      },
+      "classroom": "E08",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "C1",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "12:30"
+      },
+      "classroom": "E08",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "C3",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "E08",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "C5",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:30"
+      },
+      "classroom": "E09",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "C3",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "12:30"
+      },
+      "classroom": "E09",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "C5",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "E09",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "C1",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "12:30",
+        "end": "14:30"
+      },
+      "classroom": "D09",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "C7",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "12:30"
+      },
+      "classroom": "E14",
+      "name": "Redes de Computadores",
+      "abrev": "RC",
+      "group": "D5",
+      "type": "practise",
+      "week": [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "16:00",
+        "end": "18:00"
+      },
+      "classroom": "D09",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "C5",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "18:00",
+        "end": "20:00"
+      },
+      "classroom": "D09",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "C4",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "16:00",
+        "end": "18:00"
+      },
+      "classroom": "E14",
+      "name": "Redes de Computadores",
+      "abrev": "RC",
+      "group": "D3",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "day": 4
+    },
+    {
+      "hours": {
+        "start": "18:00",
+        "end": "20:00"
+      },
+      "classroom": "E14",
+      "name": "Redes de Computadores",
+      "abrev": "RC",
+      "group": "D1",
+      "type": "practise",
+      "week": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "day": 4
+    },
+    {
+      "hours": {
+        "start": "10:30",
+        "end": "12:30"
+      },
+      "classroom": "C01",
+      "name": "Redes de Computadores",
+      "abrev": "RC",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
+      "day": 4
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:30"
+      },
+      "classroom": "C01",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
+      "day": 4
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:00"
+      },
+      "classroom": "B01",
+      "name": "Ingeníeria del Software",
+      "abrev": "IS",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "10:00",
+        "end": "11:30"
+      },
+      "classroom": "B01",
+      "name": "Programación Orientada a Objetos",
+      "abrev": "POO",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "11:30",
+        "end": "13:00"
+      },
+      "classroom": "B01",
+      "name": "Estructura de Datos no Lineales",
+      "abrev": "EDNL",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2],
+      "day": 3
+    },
+    {
+      "hours": {
+        "start": "08:30",
+        "end": "10:00"
+      },
+      "classroom": "C02",
+      "name": "Bases de Datos",
+      "abrev": "BD",
+      "group": "A1",
+      "type": "theory",
+      "week": [1, 2],
+      "day": 5
     }
   ]
 }
