@@ -1,46 +1,58 @@
 {
-  "name": "calendar-generator",
-  "private": true,
-  "description": "Calendar generator for UCA students",
-  "version": "0.1.0",
   "author": "Kevin López Cala <kevin.lopezcala99@gmail.com>",
   "contributors": [
     {
-      "name": "Rodrigo Sanabria",
       "email": "rodrigosanabria22@gmail.com",
+      "name": "Rodrigo Sanabria",
       "url": "https://krosf.com"
     }
   ],
   "dependencies": {
-    "gatsby": "^2.0.112",
+    "bulma": "^0.7.2",
+    "gatsby": "^2.0.114",
     "gatsby-image": "^2.0.29",
+    "gatsby-plugin-google-analytics": "^2.0.13",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.22",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-sharp": "^2.1.13",
-    "prop-types": "^15.6.2",
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0"
+  },
+  "description": "Calendar generator for UCA students",
+  "devDependencies": {
+    "prettier": "^1.14.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "bulma",
+    "starter",
+    "kit",
+    "template"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
+  "name": "calendar-generator",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/lokeon/calendar"
   },
   "bugs": {
     "url": "https://github.com/lokeon/calendar/issues"
-  }
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "start": "npm run develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
 }
