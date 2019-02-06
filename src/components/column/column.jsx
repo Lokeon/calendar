@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import Weekday from "../weekday";
 import "./../style.scss";
 
 export default class Column extends Component {
   render() {
-    const { size } = this.props;
-    return <div className={`column is-${size}`}>{this.props.children}</div>;
+    const { size, title } = this.props;
+    return (
+      <div className={`column is-${size}`}>
+        <Weekday title={title} />
+        {this.props.children}
+      </div>
+    );
   }
 }

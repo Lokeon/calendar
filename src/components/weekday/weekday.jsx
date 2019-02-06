@@ -1,8 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./../style.scss";
 
-const Weekday = ({ title }) => {
+const Weekday = ({ title }) => (
   <div>
     <h2> {title} </h2>
-  </div>;
-};
+  </div>
+);
+
+export default Weekday;
