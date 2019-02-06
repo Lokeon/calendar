@@ -2,7 +2,7 @@ import React from "react";
 import "./../style.scss";
 
 const Weekday = ({ title }) => (
-  <div>
+  <div className="has-text-centered">
     <h2> {title} </h2>
   </div>
 );
