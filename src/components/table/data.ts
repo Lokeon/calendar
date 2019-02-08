@@ -1,34 +1,4 @@
-interface day {
-  id: string;
-  title: string;
-  subjectIds: string[];
-}
-
-interface days {
-  [key: string]: day;
-}
-
-interface subjects {
-  [key: string]: subject;
-}
-
-interface duration {
-  start: string;
-  end: string;
-}
-
-interface subject {
-  hours: duration;
-  classroom: string;
-  name: string;
-  abrev: string;
-  group: string;
-  type: string;
-  week: number[];
-  day: number;
-  course: string;
-  id: string;
-}
+import { days, subjects } from "./../types";
 
 const initialData = {
   order: [
@@ -788,7 +758,7 @@ const initialData = {
       course: "2B",
       id: "subject-3-19"
     },
-    "subjects-4-0": {
+    "subject-4-0": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E14",
       name: "Redes de Computadores",
@@ -800,7 +770,7 @@ const initialData = {
       course: "2A",
       id: "subject-4-0"
     },
-    "subjects-4-1": {
+    "subject-4-1": {
       hours: { start: "18:00", end: "20:00" },
       classroom: "E14",
       name: "Redes de Computadores",
@@ -812,7 +782,7 @@ const initialData = {
       course: "2A",
       id: "subject-4-1"
     },
-    "subjects-4-2": {
+    "subject-4-2": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "C01",
       name: "Redes de Computadores",
@@ -824,7 +794,7 @@ const initialData = {
       course: "2A",
       id: "subject-4-2"
     },
-    "subjects-4-3": {
+    "subject-4-3": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "C01",
       name: "Bases de Datos",
@@ -836,7 +806,7 @@ const initialData = {
       course: "2A",
       id: "subject-4-3"
     },
-    "subjects-4-4": {
+    "subject-4-4": {
       hours: { start: "10:30", end: "12:30" },
       group: "A2",
       name: "Bases de Datos",
@@ -848,7 +818,7 @@ const initialData = {
       course: "2B",
       id: "subject-4-4"
     },
-    "subjects-4-5": {
+    "subject-4-5": {
       hours: { start: "09:00", end: "10:30" },
       classroom: "C02",
       name: "Redes de Computadores",
