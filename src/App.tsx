@@ -1,8 +1,5 @@
 import React from "react";
+import Table from "./components/table";
 import "./styles.scss";
-const App = () => (
-  <div>
-    <h1>Hola</h1>
-  </div>
-);
+const App = () => <Table />;
 export default App;

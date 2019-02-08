@@ -1,7 +1,15 @@
-interface days {
+interface day {
   id: string;
   title: string;
   subjectIds: string[];
+}
+
+interface days {
+  [key: string]: day;
+}
+
+interface subjects {
+  [key: string]: subject;
 }
 
 interface duration {
@@ -22,13 +30,6 @@ interface subject {
   id: string;
 }
 
-
-interface stateData {
-    order: string[],
-    days: days{},
-    sub
-}
-
 const initialData = {
   order: [
     "all",
@@ -41,7 +42,7 @@ const initialData = {
   days: {
     all: {
       id: "all",
-      title: "all",
+      title: "Asignaturas",
       subjectIds: [
         "subject-1-0",
         "subject-1-1",
@@ -111,33 +112,33 @@ const initialData = {
         "subject-5-5",
         "subject-5-6"
       ]
-    } as days,
+    },
     monday: {
       id: "monday",
-      title: "monday",
+      title: "Lunes",
       subjectIds: []
-    } as days,
+    },
     tuesday: {
       id: "tuesday",
-      title: "tuesday",
+      title: "Martes",
       subjectIds: []
-    } as days,
+    },
     wednesday: {
       id: "wednesday",
-      title: "wednesday",
+      title: "Miércoles",
       subjectIds: []
-    } as days,
+    },
     thursday: {
       id: "thursday",
-      title: "thursday",
+      title: "Jueves",
       subjectIds: []
-    } as days,
+    },
     friday: {
       id: "friday",
-      title: "friday",
+      title: "Viernes",
       subjectIds: []
-    } as days
-  },
+    }
+  } as days,
   subjects: {
     "subject-1-0": {
       hours: { start: "08:30", end: "10:00" },
@@ -150,7 +151,7 @@ const initialData = {
       day: 1,
       course: "2A",
       id: "subject-1-0"
-    } as subject,
+    },
     "subject-1-1": {
       hours: { start: "10:00", end: "11:30" },
       classroom: "C01",
@@ -162,7 +163,7 @@ const initialData = {
       day: 1,
       course: "2A",
       id: "subject-1-1"
-    } as subject,
+    },
     "subject-1-2": {
       hours: { start: "11:30", end: "13:00" },
       classroom: "C01",
@@ -174,7 +175,7 @@ const initialData = {
       day: 1,
       course: "2A",
       id: "subject-1-2"
-    } as subject,
+    },
     "subject-1-3": {
       hours: { start: "13:00", end: "14:30" },
       classroom: "C01",
@@ -186,7 +187,7 @@ const initialData = {
       day: 1,
       course: "2A",
       id: "subject-1-3"
-    } as subject,
+    },
     "subject-1-4": {
       hours: { start: "10:00", end: "11:30" },
       classroom: "C02",
@@ -198,7 +199,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-4"
-    } as subject,
+    },
     "subject-1-5": {
       hours: { start: "08:30", end: "10:00" },
       classroom: "C02",
@@ -210,7 +211,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-5"
-    } as subject,
+    },
     "subject-1-6": {
       hours: { start: "11:30", end: "13:00" },
       classroom: "C02",
@@ -222,7 +223,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-6"
-    } as subject,
+    },
     "subject-1-7": {
       hours: { start: "11:30", end: "13:00" },
       classroom: "C02",
@@ -234,7 +235,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-7"
-    } as subject,
+    },
     "subject-1-8": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E09",
@@ -246,7 +247,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-8"
-    } as subject,
+    },
     "subject-1-9": {
       hours: { start: "18:00", end: "20:00" },
       classroom: "E09",
@@ -258,7 +259,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-9"
-    } as subject,
+    },
     "subject-1-10": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "D09",
@@ -270,7 +271,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-10"
-    } as subject,
+    },
     "subject-1-11": {
       hours: { start: "18:00", end: "20:00" },
       classroom: "E14",
@@ -282,7 +283,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-11"
-    } as subject,
+    },
     "subject-1-12": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E14",
@@ -294,7 +295,7 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-12"
-    } as subject,
+    },
     "subject-2-0": {
       hours: { start: "08:30", end: "09:30" },
       classroom: "C03",
@@ -306,7 +307,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-0"
-    } as subject,
+    },
     "subject-2-1": {
       hours: { start: "09:30", end: "10:30" },
       classroom: "C04",
@@ -318,7 +319,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-1"
-    } as subject,
+    },
     "subject-2-2": {
       hours: { start: "08:30", end: "09:30" },
       classroom: "C04",
@@ -330,7 +331,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-2"
-    } as subject,
+    },
     "subject-2-3": {
       hours: { start: "09:30", end: "10:30" },
       classroom: "C04",
@@ -342,7 +343,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-3"
-    } as subject,
+    },
     "subject-2-4": {
       hours: { start: "10:30", end: "11:30" },
       classroom: "C04",
@@ -354,7 +355,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-4"
-    } as subject,
+    },
     "subject-2-5": {
       hours: { start: "11:30", end: "12:30" },
       classroom: "C03",
@@ -366,7 +367,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-5"
-    } as subject,
+    },
     "subject-2-6": {
       hours: { start: "10:30", end: "11:30" },
       classroom: "C03",
@@ -378,7 +379,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-6"
-    } as subject,
+    },
     "subject-2-7": {
       hours: { start: "11:30", end: "12:30" },
       classroom: "C04",
@@ -390,7 +391,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-7"
-    } as subject,
+    },
     "subject-2-8": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "C08",
@@ -402,7 +403,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-8"
-    } as subject,
+    },
     "subject-2-9": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "D08",
@@ -414,7 +415,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-9"
-    } as subject,
+    },
     "subject-2-10": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "D09",
@@ -426,7 +427,7 @@ const initialData = {
       day: 2,
       course: "2A",
       id: "subject-2-10"
-    } as subject,
+    },
     "subject-2-11": {
       hours: { start: "08:30", end: "09:30" },
       group: "B2",
@@ -438,7 +439,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-11"
-    } as subject,
+    },
     "subject-2-12": {
       hours: { start: "08:30", end: "09:30" },
       group: "B4",
@@ -450,7 +451,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-12"
-    } as subject,
+    },
     "subject-2-13": {
       hours: { start: "09:30", end: "10:30" },
       group: "B4",
@@ -462,7 +463,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-13"
-    } as subject,
+    },
     "subject-2-14": {
       hours: { start: "09:30", end: "10:30" },
       group: "B2",
@@ -474,7 +475,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-14"
-    } as subject,
+    },
     "subject-2-15": {
       hours: { start: "08:30", end: "09:30" },
       group: "C6",
@@ -486,7 +487,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-15"
-    } as subject,
+    },
     "subject-2-16": {
       hours: { start: "10:30", end: "11:30" },
       group: "B4",
@@ -498,7 +499,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-16"
-    } as subject,
+    },
     "subject-2-17": {
       hours: { start: "11:30", end: "12:30" },
       group: "B2",
@@ -510,7 +511,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-17"
-    } as subject,
+    },
     "subject-2-18": {
       hours: { start: "10:30", end: "11:30" },
       group: "B2",
@@ -522,7 +523,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-18"
-    } as subject,
+    },
     "subject-2-19": {
       hours: { start: "11:30", end: "12:30" },
       group: "B4",
@@ -534,7 +535,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-19"
-    } as subject,
+    },
     "subject-2-20": {
       hours: { start: "12:30", end: "14:30" },
       group: "C6",
@@ -546,7 +547,7 @@ const initialData = {
       day: 2,
       course: "2B",
       id: "subject-2-20"
-    } as subject,
+    },
     "subject-3-0": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "D08",
@@ -558,7 +559,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-0"
-    } as subject,
+    },
     "subject-3-1": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "D08",
@@ -570,7 +571,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-1"
-    } as subject,
+    },
     "subject-3-2": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "D08",
@@ -582,7 +583,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-2"
-    } as subject,
+    },
     "subject-3-3": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "E08",
@@ -594,7 +595,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-3"
-    } as subject,
+    },
     "subject-3-4": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "E08",
@@ -606,7 +607,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-4"
-    } as subject,
+    },
     "subject-3-5": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "E08",
@@ -618,7 +619,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-5"
-    } as subject,
+    },
     "subject-3-6": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "E09",
@@ -630,7 +631,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-6"
-    } as subject,
+    },
     "subject-3-7": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "E09",
@@ -642,7 +643,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-7"
-    } as subject,
+    },
     "subject-3-8": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "E09",
@@ -654,7 +655,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-8"
-    } as subject,
+    },
     "subject-3-9": {
       hours: { start: "12:30", end: "14:30" },
       classroom: "D09",
@@ -666,7 +667,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-9"
-    } as subject,
+    },
     "subject-3-10": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "E14",
@@ -678,7 +679,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-10"
-    } as subject,
+    },
     "subject-3-11": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "D09",
@@ -690,7 +691,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-11"
-    } as subject,
+    },
     "subject-3-12": {
       hours: { start: "18:00", end: "20:00" },
       classroom: "D09",
@@ -702,7 +703,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-12"
-    } as subject,
+    },
     "subject-3-13": {
       hours: { start: "08:30", end: "10:00" },
       classroom: "B01",
@@ -714,7 +715,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-13"
-    } as subject,
+    },
     "subject-3-14": {
       hours: { start: "10:00", end: "11:30" },
       classroom: "B01",
@@ -726,7 +727,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-14"
-    } as subject,
+    },
     "subject-3-15": {
       hours: { start: "11:30", end: "13:00" },
       classroom: "B01",
@@ -738,7 +739,7 @@ const initialData = {
       day: 3,
       course: "2A",
       id: "subject-3-15"
-    } as subject,
+    },
     "subject-3-16": {
       hours: { start: "10:00", end: "11:30" },
       group: "A2",
@@ -750,7 +751,7 @@ const initialData = {
       day: 3,
       course: "2B",
       id: "subject-3-16"
-    } as subject,
+    },
     "subject-3-17": {
       hours: { start: "08:30", end: "10:00" },
       group: "A2",
@@ -762,7 +763,7 @@ const initialData = {
       day: 3,
       course: "2B",
       id: "subject-3-17"
-    } as subject,
+    },
     "subject-3-18": {
       hours: { start: "10:30", end: "12:30" },
       group: "C4",
@@ -774,7 +775,7 @@ const initialData = {
       day: 3,
       course: "2B",
       id: "subject-3-18"
-    } as subject,
+    },
     "subject-3-19": {
       hours: { start: "11:30", end: "13:00" },
       group: "A2",
@@ -786,7 +787,7 @@ const initialData = {
       day: 3,
       course: "2B",
       id: "subject-3-19"
-    } as subject,
+    },
     "subjects-4-0": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E14",
@@ -798,7 +799,7 @@ const initialData = {
       day: 4,
       course: "2A",
       id: "subject-4-0"
-    } as subject,
+    },
     "subjects-4-1": {
       hours: { start: "18:00", end: "20:00" },
       classroom: "E14",
@@ -810,7 +811,7 @@ const initialData = {
       day: 4,
       course: "2A",
       id: "subject-4-1"
-    } as subject,
+    },
     "subjects-4-2": {
       hours: { start: "10:30", end: "12:30" },
       classroom: "C01",
@@ -822,7 +823,7 @@ const initialData = {
       day: 4,
       course: "2A",
       id: "subject-4-2"
-    } as subject,
+    },
     "subjects-4-3": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "C01",
@@ -834,7 +835,7 @@ const initialData = {
       day: 4,
       course: "2A",
       id: "subject-4-3"
-    } as subject,
+    },
     "subjects-4-4": {
       hours: { start: "10:30", end: "12:30" },
       group: "A2",
@@ -846,7 +847,7 @@ const initialData = {
       day: 4,
       course: "2B",
       id: "subject-4-4"
-    } as subject,
+    },
     "subjects-4-5": {
       hours: { start: "09:00", end: "10:30" },
       classroom: "C02",
@@ -858,7 +859,7 @@ const initialData = {
       day: 4,
       course: "2B",
       id: "subject-4-5"
-    } as subject,
+    },
     "subject-5-0": {
       hours: { start: "08:30", end: "10:00" },
       classroom: "C02",
@@ -870,7 +871,7 @@ const initialData = {
       day: 5,
       course: "2A",
       id: "subject-5-0"
-    } as subject,
+    },
     "subject-5-1": {
       hours: { start: "08:30", end: "10:30" },
       group: "C2",
@@ -882,7 +883,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-1"
-    } as subject,
+    },
     "subject-5-2": {
       hours: { start: "10:30", end: "12:30" },
       group: "C4",
@@ -894,7 +895,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-2"
-    } as subject,
+    },
     "subject-5-3": {
       hours: { start: "08:30", end: "10:30" },
       group: "C6",
@@ -906,7 +907,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-3"
-    } as subject,
+    },
     "subject-5-4": {
       hours: { start: "10:30", end: "12:30" },
       group: "C4",
@@ -918,7 +919,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-4"
-    } as subject,
+    },
     "subject-5-5": {
       hours: { start: "12:30", end: "14:30" },
       group: "C2",
@@ -930,7 +931,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-5"
-    } as subject,
+    },
     "subject-5-6": {
       hours: { start: "10:30", end: "12:30" },
       group: "A2",
@@ -942,7 +943,7 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-6"
-    } as subject
-  }
+    }
+  } as subjects
 };
 export default initialData;
