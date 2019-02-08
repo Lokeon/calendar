@@ -22,13 +22,6 @@ interface subject {
   id: string;
 }
 
-
-interface stateData {
-    order: string[],
-    days: days{},
-    sub
-}
-
 const initialData = {
   order: [
     "all",

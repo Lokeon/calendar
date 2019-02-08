@@ -1,8 +1,9 @@
 import React from "react";
-import "./styles.scss";
+import Subject from "./components/subject";
+
 const App = () => (
   <div>
-    <h1>Hola</h1>
+    <Subject />
   </div>
 );
 export default App;
