@@ -890,7 +890,7 @@ const initialData = {
       week: [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
       day: 3,
       course: "3º/4º Tecnologías de la Información",
-      id: "subject-3-20"
+      id: "subject-3-23"
     },
     "subject-3-24": {
       hours: { start: "15:30", end: "18:00" },
@@ -907,8 +907,8 @@ const initialData = {
     "subject-3-25": {
       hours: { start: "18:00", end: "20:30" },
       group: "C3",
-      name: "Administración de Servidores",
-      abrev: "AS",
+      name: "Sistemas Distribuidos",
+      abrev: "SD",
       classroom: "C09",
       type: "Prácticas",
       week: [2, 3, 4, 5, 6, 7, 8, 10],
@@ -1010,7 +1010,7 @@ const initialData = {
       week: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
       day: 4,
       course: "3º/4º Tecnologías de la Información",
-      id: "subject-4-6"
+      id: "subject-4-7"
     },
     "subject-4-8": {
       hours: { start: "11:00", end: "13:30" },
