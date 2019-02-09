@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./../column";
 import initialData from "./data";
+import styled from "styled-components";
+
+const Columns = styled.div`
+  display: flex;
+`;
 
 export default class Table extends Component {
   state = initialData;
@@ -68,8 +73,7 @@ export default class Table extends Component {
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <div style={{ margin: 8 }}>
-          <div className="columns">
+        <Columns>
             {this.state.order.map((dayId: string) => {
               const day = this.state.days[dayId];
               const subjects = day.subjectIds.map(
@@ -77,8 +81,7 @@ export default class Table extends Component {
               );
               return <Column key={day.id} day={day} subjects={subjects} />;
             })}
-          </div>
-        </div>
+        </Columns>
       </DragDropContext>
     );
   }

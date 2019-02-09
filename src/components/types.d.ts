@@ -46,3 +46,11 @@ export interface SubjectProps {
   subject: subject;
   index: number;
 }
+
+export interface CardProps {
+  isDragging: boolean;
+}
+
+export interface InnerSubjectsProps {
+  subjects: subject[];
+}
