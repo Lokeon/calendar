@@ -2,9 +2,10 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import Table from "./components/table";
 const GlobalStyle = createGlobalStyle`
+html,
 body {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: 0;
 }
 `;
 const App = () => (

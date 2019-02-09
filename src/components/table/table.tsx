@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const Columns = styled.div`
   display: flex;
+  height: 99.75vh;
 `;
 
 export default class Table extends Component {
@@ -74,13 +75,13 @@ export default class Table extends Component {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
         <Columns>
-            {this.state.order.map((dayId: string) => {
-              const day = this.state.days[dayId];
-              const subjects = day.subjectIds.map(
-                (subjecId: string) => this.state.subjects[subjecId]
-              );
-              return <Column key={day.id} day={day} subjects={subjects} />;
-            })}
+          {this.state.order.map((dayId: string) => {
+            const day = this.state.days[dayId];
+            const subjects = day.subjectIds.map(
+              (subjecId: string) => this.state.subjects[subjecId]
+            );
+            return <Column key={day.id} day={day} subjects={subjects} />;
+          })}
         </Columns>
       </DragDropContext>
     );
