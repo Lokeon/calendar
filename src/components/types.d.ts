@@ -2,14 +2,11 @@ export interface day {
   id: string;
   title: string;
   subjectIds: string[];
+  day: number;
 }
 
 export interface days {
   [key: string]: day;
-}
-
-export interface subjects {
-  [key: string]: subject;
 }
 
 export interface duration {
@@ -28,6 +25,16 @@ export interface subject {
   day: number;
   course: string;
   id: string;
+}
+
+export interface subjects {
+  [key: string]: subject;
+}
+
+export interface stateData {
+  order: string[];
+  days: days;
+  subjects: subjects;
 }
 
 export interface ColumnProps {

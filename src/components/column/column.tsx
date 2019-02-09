@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Subject from "./../subject";
-import { ColumnProps } from "../types";
+import { ColumnProps, subject } from "../types";
 import { Droppable } from "react-beautiful-dnd";
 
 import "./column.scss";
@@ -15,10 +15,11 @@ export default class Column extends Component<ColumnProps> {
           </div>
           <Droppable droppableId={this.props.day.id}>
             {provided => (
-              <div ref={provided.innerRef} {...provided.droppableProps}>
-                {this.props.subjects.map((subject: any, index: number) => (
+              <div ref={provided.innerRef} {...provided.droppableProps} style={{flexGrow: 1}}>
+                {this.props.subjects.map((subject: subject, index: number) => (
                   <Subject key={subject.id} subject={subject} index={index} />
                 ))}
+                {provided.placeholder}
               </div>
             )}
           </Droppable>

@@ -1,18 +1,12 @@
-import { days, subjects } from "./../types";
+import { stateData } from "../types";
 
 const initialData = {
-  order: [
-    "all",
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday"
-  ] as string[],
+  order: ["all", "monday", "tuesday", "wednesday", "thursday", "friday"],
   days: {
     all: {
       id: "all",
       title: "Asignaturas",
+      day: 0,
       subjectIds: [
         "subject-1-0",
         "subject-1-1",
@@ -86,29 +80,34 @@ const initialData = {
     monday: {
       id: "monday",
       title: "Lunes",
+      day: 1,
       subjectIds: []
     },
     tuesday: {
       id: "tuesday",
       title: "Martes",
+      day: 2,
       subjectIds: []
     },
     wednesday: {
       id: "wednesday",
       title: "Miércoles",
+      day: 3,
       subjectIds: []
     },
     thursday: {
       id: "thursday",
       title: "Jueves",
+      day: 4,
       subjectIds: []
     },
     friday: {
       id: "friday",
       title: "Viernes",
+      day: 5,
       subjectIds: []
     }
-  } as days,
+  },
   subjects: {
     "subject-1-0": {
       hours: { start: "08:30", end: "10:00" },
@@ -914,6 +913,6 @@ const initialData = {
       course: "2B",
       id: "subject-5-6"
     }
-  } as subjects
-};
+  }
+} as stateData;
 export default initialData;
