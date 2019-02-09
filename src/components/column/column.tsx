@@ -11,6 +11,8 @@ const SubjectsContainer = styled.div`
   padding: 2px;
   flex-grow: 1;
   min-height: 100px;
+  overflow: scroll;
+  height: 100vh;
 `;
 const ColumnContainer = styled.div`
   margin: 8px;
