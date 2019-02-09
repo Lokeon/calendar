@@ -77,6 +77,15 @@ export default class Subject extends Component<SubjectProps> {
       case "BD":
         theme = "#FBDDDD";
         break;
+      case "SD":
+        theme = "#00e600";
+        break;
+      case "SSI":
+        theme = "#ff80b3";
+        break;
+      case "AS":
+        theme = "#a64dff";
+        break;
     }
     return theme;
   }
