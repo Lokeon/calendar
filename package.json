@@ -1,6 +1,24 @@
 {
   "name": "timetable",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rodrigo Sanabria",
+    "email": "rodrigosanabria22@gmail.com",
+    "url": "https://krosf.com"
+  },
+  "contributors": [
+    {
+      "name": "Kevin López Cala",
+      "email": "kevin.lopezcala99@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lokeon/calendar"
+  },
+  "bugs": {
+    "url": "https://github.com/Lokeon/calendar/issues"
+  },
   "private": true,
   "dependencies": {
     "react": "^16.8.1",
@@ -20,10 +38,11 @@
     "extends": "react-app"
   },
   "browserslist": [
-    ">0.2%",
+    ">1%",
     "not dead",
     "not ie <= 11",
-    "not op_mini all"
+    "not op_mini all",
+    "not UCAndroid > 0"
   ],
   "devDependencies": {
     "@types/jest": "24.0.0",
