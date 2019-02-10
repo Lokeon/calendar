@@ -28,11 +28,6 @@ const Columns = styled.div`
   height: 100vh;
 `;
 
-const Button = styled.button`
-  display: flex;
-  background-color: rebeccapurple;
-`;
-
 export default class Table extends Component {
   state = initialData;
 
@@ -108,10 +103,7 @@ export default class Table extends Component {
       <DragDropContext onDragEnd={this.onDragEnd}>
         <Container>
           <Sidebar>
-            <Columns>
-              <Button />
-              {this.allSubjects()}
-            </Columns>
+            <Columns>{this.allSubjects()}</Columns>
           </Sidebar>
           <Content>
             <Columns>
