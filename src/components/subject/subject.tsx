@@ -2,16 +2,15 @@ import React, { Component } from "react";
 import { SubjectProps, CardProps } from "../types";
 import { Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
-
+import { subjectBgColor, subjectAbrevColor } from "./colors";
 const Card = styled.div<CardProps>`
-  border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: ${props =>
     props.isDragging ? "lightgrey" : props.theme.main};
   padding: 4px;
-  margin-bottom: 2px;
-  display: flex;
-  flex-direction: column;
+  margin: auto;
+  margin-bottom: 4px;
+  width: 170px;
 `;
 
 Card.defaultProps = {
@@ -43,10 +42,17 @@ const Aula = styled.div`
 const Abrev = styled.div`
   font-weight: 800;
   position: relative;
+  color: ${props => props.theme.main};
   text-align: center;
   padding-top: 4px;
   padding-bottom: 4px;
 `;
+
+Abrev.defaultProps = {
+  theme: {
+    main: "white"
+  }
+};
 
 const Clase = styled.div`
   text-align: center;
@@ -55,40 +61,10 @@ const Clase = styled.div`
 
 const Weeks = styled.div`
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 `;
 
 export default class Subject extends Component<SubjectProps> {
-  subjectTheme(abrev: string): string {
-    let theme = "white";
-    switch (abrev) {
-      case "POO":
-        theme = "#E7DDE9";
-        break;
-      case "EDNL":
-        theme = "#E1ECF4";
-        break;
-      case "RC":
-        theme = "#FFECD9";
-        break;
-      case "IS":
-        theme = "#E4F2E2";
-        break;
-      case "BD":
-        theme = "#FBDDDD";
-        break;
-      case "SD":
-        theme = "#00e600";
-        break;
-      case "SSI":
-        theme = "#ff80b3";
-        break;
-      case "AS":
-        theme = "#a64dff";
-        break;
-    }
-    return theme;
-  }
   render() {
     const { abrev, classroom, week, group, hours, type } = this.props.subject;
     return (
@@ -98,13 +74,18 @@ export default class Subject extends Component<SubjectProps> {
             {...provided.draggableProps}
             ref={provided.innerRef}
             isDragging={snapshot.isDragging}
-            theme={{ main: this.subjectTheme(abrev) }}
+            theme={{ main: subjectBgColor(abrev) }}
           >
             <CardHeader>
               <Hora>{`${hours.start} a ${hours.end}`}</Hora>
               <Aula>{"Aula " + classroom}</Aula>
             </CardHeader>
-            <Abrev {...provided.dragHandleProps}>{abrev}</Abrev>
+            <Abrev
+              theme={{ main: subjectAbrevColor(abrev) }}
+              {...provided.dragHandleProps}
+            >
+              {abrev}
+            </Abrev>
             <Clase>{group + " - " + type}</Clase>
             <Weeks>{week.join(" ")}</Weeks>
           </Card>

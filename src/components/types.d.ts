@@ -1,3 +1,12 @@
+export interface color {
+  bgc: string;
+  abrev: string;
+}
+
+export interface colors {
+  [key: string]: color;
+}
+
 export interface day {
   id: string;
   title: string;

@@ -4,23 +4,29 @@ import { ColumnProps, subject, InnerSubjectsProps } from "../types";
 import { Droppable } from "react-beautiful-dnd";
 import styled from "styled-components";
 
-const Title = styled.h4`
+const Title = styled.div`
   padding: 4px;
+  margin: 0;
+  text-align: center;
+  color: #333333;
+  font-weight: 600;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 `;
 const SubjectsContainer = styled.div`
-  padding: 2px;
   flex-grow: 1;
-  min-height: 100px;
+  min-height: 200px;
   overflow: scroll;
   height: 100%;
+  padding: 4px;
 `;
 const ColumnContainer = styled.div`
   margin: 8px;
-  border: 1px solid lightgray;
-  border-radius: 2px;
-  width: 200px;
+  border-radius: 3px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(226, 228, 230);
 `;
 class InnerSubjects extends Component<InnerSubjectsProps> {
   shouldComponentUpdate(nextProps: InnerSubjectsProps) {
@@ -46,7 +52,6 @@ export default class Column extends Component<ColumnProps> {
             <SubjectsContainer
               ref={provided.innerRef}
               {...provided.droppableProps}
-              style={{ flexGrow: 1 }}
             >
               <InnerSubjects subjects={this.props.subjects} />
               {provided.placeholder}

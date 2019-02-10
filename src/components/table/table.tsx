@@ -4,9 +4,33 @@ import Column from "./../column";
 import initialData from "./data";
 import styled from "styled-components";
 
+const Container = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+`;
+
+const Sidebar = styled.div`
+  flex: 1;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f2f2f2f2;
+`;
+
+const Content = styled.div`
+  flex: 11;
+  max-width: 100%;
+  background-color: whitesmoke;
+`;
+
 const Columns = styled.div`
   display: flex;
-  height: 99.75vh;
+  height: 100vh;
+`;
+
+const Button = styled.button`
+  display: flex;
+  background-color: rebeccapurple;
 `;
 
 export default class Table extends Component {
@@ -71,18 +95,36 @@ export default class Table extends Component {
     }
   };
 
+  allSubjects() {
+    const day = this.state.days[this.state.order[0]];
+    const subjects = day.subjectIds.map(
+      (subjecId: string) => this.state.subjects[subjecId]
+    );
+    return <Column key={day.id} day={day} subjects={subjects} />;
+  }
+
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <Columns>
-          {this.state.order.map((dayId: string) => {
-            const day = this.state.days[dayId];
-            const subjects = day.subjectIds.map(
-              (subjecId: string) => this.state.subjects[subjecId]
-            );
-            return <Column key={day.id} day={day} subjects={subjects} />;
-          })}
-        </Columns>
+        <Container>
+          <Sidebar>
+            <Columns>
+              <Button />
+              {this.allSubjects()}
+            </Columns>
+          </Sidebar>
+          <Content>
+            <Columns>
+              {this.state.order.slice(1).map((dayId: string) => {
+                const day = this.state.days[dayId];
+                const subjects = day.subjectIds.map(
+                  (subjecId: string) => this.state.subjects[subjecId]
+                );
+                return <Column key={day.id} day={day} subjects={subjects} />;
+              })}
+            </Columns>
+          </Content>
+        </Container>
       </DragDropContext>
     );
   }
