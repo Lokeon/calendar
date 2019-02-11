@@ -50,6 +50,7 @@ const initialData = {
         "subject-2-25",
         "subject-2-26",
         "subject-2-27",
+        "subject-2-28",
         "subject-3-0",
         "subject-3-1",
         "subject-3-2",
@@ -634,6 +635,18 @@ const initialData = {
       day: 2,
       course: "1B",
       id: "subject-2-27"
+    },
+    "subject-2-28": {
+      hours: { start: "11:30", end: "12:30" },
+      classroom: "E08",
+      name: "Fundamentos de Estructura de Computadores",
+      abrev: "FEC",
+      group: "C2",
+      type: "Practicas Informaticas",
+      week: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 2,
+      course: "1B",
+      id: "subject-2-28"
     },
     "subject-3-0": {
       hours: { start: "08:30", end: "10:30" },
