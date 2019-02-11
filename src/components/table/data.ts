@@ -21,6 +21,7 @@ const initialData = {
         "subject-1-10",
         "subject-1-11",
         "subject-1-12",
+        "subject-1-13",
         "subject-2-0",
         "subject-2-1",
         "subject-2-2",
@@ -48,6 +49,7 @@ const initialData = {
         "subject-2-24",
         "subject-2-25",
         "subject-2-26",
+        "subject-2-27",
         "subject-3-0",
         "subject-3-1",
         "subject-3-2",
@@ -74,6 +76,8 @@ const initialData = {
         "subject-3-23",
         "subject-3-24",
         "subject-3-25",
+        "subject-3-26",
+        "subject-3-27",
         "subject-4-0",
         "subject-4-1",
         "subject-4-2",
@@ -83,13 +87,16 @@ const initialData = {
         "subject-4-6",
         "subject-4-7",
         "subject-4-8",
+        "subject-4-9",
+        "subject-4-10",
         "subject-5-0",
         "subject-5-1",
         "subject-5-2",
         "subject-5-3",
         "subject-5-4",
         "subject-5-5",
-        "subject-5-6"
+        "subject-5-6",
+        "subject-5-7"
       ]
     },
     monday: {
@@ -209,7 +216,7 @@ const initialData = {
       id: "subject-1-6"
     },
     "subject-1-7": {
-      hours: { start: "11:30", end: "13:00" },
+      hours: { start: "13:00", end: "14:30" },
       classroom: "C02",
       name: "Estructura de Datos no Lineales",
       abrev: "EDNL",
@@ -279,6 +286,18 @@ const initialData = {
       day: 1,
       course: "2B",
       id: "subject-1-12"
+    },
+    "subject-1-13": {
+      hours: { start: "08:30", end: "10:00" },
+      classroom: "B06",
+      name: "Organizacion y Gestion de Empresas",
+      abrev: "OGE",
+      group: "A1",
+      type: "Teoría",
+      week: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 1,
+      course: "1A",
+      id: "subject-1-13"
     },
     "subject-2-0": {
       hours: { start: "08:30", end: "09:30" },
@@ -604,6 +623,18 @@ const initialData = {
       course: "3º/4º Tecnologías de la Información",
       id: "subject-2-26"
     },
+    "subject-2-27": {
+      hours: { start: "08:30", end: "10:30" },
+      classroom: "B02",
+      name: "Fundamentos de Estructura de Computadores",
+      abrev: "FEC",
+      group: "A2",
+      type: "Teoría",
+      week: [1, 2, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14],
+      day: 2,
+      course: "1B",
+      id: "subject-2-27"
+    },
     "subject-3-0": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "D08",
@@ -916,6 +947,30 @@ const initialData = {
       course: "3º/4º Tecnologías de la Información",
       id: "subject-3-25"
     },
+    "subject-3-26": {
+      hours: { start: "16:00", end: "17:30" },
+      classroom: "D03",
+      name: "Organizacion y Gestion de Empresas",
+      abrev: "OGE",
+      group: "B2",
+      type: "Problemas",
+      week: [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      day: 3,
+      course: "1B",
+      id: "subject-3-26"
+    },
+    "subject-3-27": {
+      hours: { start: "16:00", end: "17:30" },
+      classroom: "D03",
+      name: "Organizacion y Gestion de Empresas",
+      abrev: "OGE",
+      group: "B2",
+      type: "Problemas",
+      week: [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
+      day: 3,
+      course: "1B",
+      id: "subject-3-27"
+    },
     "subject-4-0": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E14",
@@ -1024,6 +1079,30 @@ const initialData = {
       course: "3º/4º Tecnologías de la Información",
       id: "subject-4-8"
     },
+    "subject-4-9": {
+      hours: { start: "11:30", end: "13:00" },
+      classroom: "E15",
+      name: "Fundamentos de Estructura de Computadores",
+      abrev: "FEC",
+      group: "D6",
+      type: "Practicas de Laboratorios",
+      week: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 4,
+      course: "1B",
+      id: "subject-4-9"
+    },
+    "subject-4-10": {
+      hours: { start: "13:00", end: "14:30" },
+      classroom: "E15",
+      name: "Fundamentos de Estructura de Computadores",
+      abrev: "FEC",
+      group: "D8",
+      type: "Practicas de Laboratorios",
+      week: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 4,
+      course: "1B",
+      id: "subject-4-10"
+    },
     "subject-5-0": {
       hours: { start: "08:30", end: "10:00" },
       classroom: "C02",
@@ -1107,6 +1186,18 @@ const initialData = {
       day: 5,
       course: "2B",
       id: "subject-5-6"
+    },
+    "subject-5-7": {
+      hours: { start: "08:30", end: "10:00" },
+      classroom: "B02",
+      name: "Organizacion y Gestion de Empresas",
+      abrev: "OGE",
+      group: "A2",
+      type: "Teoría",
+      week: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 5,
+      course: "1B",
+      id: "subject-5-7"
     }
   }
 } as stateData;

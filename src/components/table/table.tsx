@@ -63,9 +63,10 @@ export default class Table extends Component {
         }
       };
       this.setState(newState);
-      return;
-    }
-    if (end.day === this.state.subjects[draggableId].day || end.day === 0) {
+    } else if (
+      end.day === this.state.subjects[draggableId].day ||
+      end.day === 0
+    ) {
       const startSubjectsIds = Array.from(start.subjectIds);
       startSubjectsIds.splice(source.index, 1);
       const newStart = {
@@ -88,6 +89,7 @@ export default class Table extends Component {
       };
       this.setState(newState);
     }
+    //console.log(JSON.stringify(this.state));
   };
 
   allSubjects() {
