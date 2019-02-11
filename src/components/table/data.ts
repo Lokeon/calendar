@@ -78,7 +78,6 @@ const initialData = {
         "subject-3-24",
         "subject-3-25",
         "subject-3-26",
-        "subject-3-27",
         "subject-4-0",
         "subject-4-1",
         "subject-4-2",
@@ -971,18 +970,6 @@ const initialData = {
       day: 3,
       course: "1B",
       id: "subject-3-26"
-    },
-    "subject-3-27": {
-      hours: { start: "16:00", end: "17:30" },
-      classroom: "D03",
-      name: "Organizacion y Gestion de Empresas",
-      abrev: "OGE",
-      group: "B2",
-      type: "Problemas",
-      week: [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15],
-      day: 3,
-      course: "1B",
-      id: "subject-3-27"
     },
     "subject-4-0": {
       hours: { start: "16:00", end: "18:00" },
