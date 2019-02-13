@@ -51,6 +51,8 @@ const initialData = {
         "subject-2-26",
         "subject-2-27",
         "subject-2-28",
+        "subject-2-29",
+        "subject-2-30",
         "subject-3-0",
         "subject-3-1",
         "subject-3-2",
@@ -78,6 +80,8 @@ const initialData = {
         "subject-3-24",
         "subject-3-25",
         "subject-3-26",
+        "subject-3-27",
+        "subject-3-28",
         "subject-4-0",
         "subject-4-1",
         "subject-4-2",
@@ -89,6 +93,9 @@ const initialData = {
         "subject-4-8",
         "subject-4-9",
         "subject-4-10",
+        "subject-4-11",
+        "subject-4-12",
+        "subject-4-13",
         "subject-5-0",
         "subject-5-1",
         "subject-5-2",
@@ -647,6 +654,30 @@ const initialData = {
       course: "1B",
       id: "subject-2-28"
     },
+    "subject-2-29": {
+      hours: { start: "08:30", end: "10:30" },
+      classroom: "D07",
+      name: "Aprendizaje Computacional",
+      abrev: "ApC",
+      group: "A1",
+      type: "Teoría",
+      week: [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+      day: 2,
+      course: "3º/4º Computación",
+      id: "subject-2-29"
+    },
+    "subject-2-30": {
+      hours: { start: "10:30", end: "13:00" },
+      classroom: "E07",
+      name: "Procesadores de Lenguaje",
+      abrev: "PL",
+      group: "C1",
+      type: "Prácticas",
+      week: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      day: 2,
+      course: "3º/4º Computación",
+      id: "subject-2-30"
+    },
     "subject-3-0": {
       hours: { start: "08:30", end: "10:30" },
       classroom: "D08",
@@ -971,6 +1002,30 @@ const initialData = {
       course: "1B",
       id: "subject-3-26"
     },
+    "subject-3-27": {
+      hours: { start: "09:30", end: "11:30" },
+      classroom: "FS17",
+      name: "Percepción",
+      abrev: "P",
+      group: "A1",
+      type: "Teoría",
+      week: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13],
+      day: 3,
+      course: "3º/4º Computación",
+      id: "subject-3-27"
+    },
+    "subject-3-28": {
+      hours: { start: "11:30", end: "14:30" },
+      classroom: "C08",
+      name: "Aprendizaje Computacional",
+      abrev: "ApC",
+      group: "C1",
+      type: "Prácticas",
+      week: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14],
+      day: 3,
+      course: "3º/4º Computación",
+      id: "subject-3-28"
+    },
     "subject-4-0": {
       hours: { start: "16:00", end: "18:00" },
       classroom: "E14",
@@ -1102,6 +1157,42 @@ const initialData = {
       day: 4,
       course: "1B",
       id: "subject-4-10"
+    },
+    "subject-4-11": {
+      hours: { start: "12:00", end: "14:00" },
+      classroom: "FS17",
+      name: "Procesadores de Lenguaje",
+      abrev: "PL",
+      group: "A1",
+      type: "Teoría",
+      week: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      day: 4,
+      course: "3º/4º Computación",
+      id: "subject-4-11"
+    },
+    "subject-4-12": {
+      hours: { start: "12:00", end: "14:00" },
+      classroom: "FS17",
+      name: "Procesadores de Lenguaje",
+      abrev: "PL",
+      group: "B1",
+      type: "Problemas",
+      week: [11, 12, 13, 14, 15],
+      day: 4,
+      course: "3º/4º Computación",
+      id: "subject-4-12"
+    },
+    "subject-4-13": {
+      hours: { start: "09:00", end: "12:00" },
+      classroom: "B07",
+      name: "Percepción",
+      abrev: "P",
+      group: "C1",
+      type: "Prácticas",
+      week: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      day: 4,
+      course: "3º/4º Computación",
+      id: "subject-4-13"
     },
     "subject-5-0": {
       hours: { start: "08:30", end: "10:00" },
