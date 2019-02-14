@@ -1004,7 +1004,7 @@ const initialData = {
     },
     "subject-3-27": {
       hours: { start: "09:30", end: "11:30" },
-      classroom: "FS17",
+      classroom: "C08",
       name: "Percepción",
       abrev: "P",
       group: "A1",
@@ -1160,7 +1160,7 @@ const initialData = {
     },
     "subject-4-11": {
       hours: { start: "12:00", end: "14:00" },
-      classroom: "FS17",
+      classroom: "C19",
       name: "Procesadores de Lenguaje",
       abrev: "PL",
       group: "A1",
@@ -1172,7 +1172,7 @@ const initialData = {
     },
     "subject-4-12": {
       hours: { start: "12:00", end: "14:00" },
-      classroom: "FS17",
+      classroom: "C19",
       name: "Procesadores de Lenguaje",
       abrev: "PL",
       group: "B1",
