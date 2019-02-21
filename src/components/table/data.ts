@@ -985,7 +985,7 @@ const initialData = {
       abrev: "SD",
       classroom: "C09",
       type: "Prácticas",
-      week: [2, 3, 4, 5, 6, 7, 8, 10],
+      week: [3, 4, 5, 6, 7, 8, 9, 10],
       day: 3,
       course: "3º/4º Tecnologías de la Información",
       id: "subject-3-25"
