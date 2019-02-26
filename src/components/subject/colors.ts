@@ -3,6 +3,7 @@ import { colors } from "../types";
 const colorSubject = {
   AS: { bgc: "rgba(203, 123, 140, 1)", abrev: "rgba(174, 49, 75, 1)" },
   BD: { bgc: "rgba(254, 114, 117, 1)", abrev: "rgba(216, 0, 3, 1)" },
+  EST: { bgc: "rgba(254, 114, 117, 1)", abrev: "rgba(216, 0, 3, 1)" },
   ApC: { bgc: "rgba(254, 114, 117, 1)", abrev: "rgba(216, 0, 3, 1)" },
   EDNL: { bgc: "rgba(152, 209, 141, 1)", abrev: "rgba(23, 122, 0, 1)" },
   P: { bgc: "rgba(152, 209, 141, 1)", abrev: "rgba(23, 122, 0, 1)" },
